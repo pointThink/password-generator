@@ -9,6 +9,8 @@ namespace Generator {
     int getRand(int max_rand);
 
     string generatePassword(int len, bool nums, bool specialchars, bool rcap) {
+        
+        srand(time(NULL))
 
         // lists of random chars for better generating
         // std_chars dosent go all the way to z beacuse i was lazy
